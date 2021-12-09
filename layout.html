@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Layouts</title>
+    <style>
+        #header{
+            background-color: lightgray;
+            height: 100px;
+        }
+        #nav{
+            background-color: lightseagreen; width: 200px; 
+            height: 300px; 
+            float: left; 
+        }
+        #section{
+            background-color: lightyellow; width: 200px;
+            text-align: left; float: left; padding: 10px;
+        }
+        #footer{
+            background-color: yellow;
+            height: 100px; clear:both;
+        }
+        #header, #nav, #section, #footer {text-align: center;}
+        #nav,#section {line-height: 240px;}
+    </style>
+    </head>
+    <body>
+        <h1>div 요소를 이용한레이아웃</h1>
+
+        <div id="header">
+            <h2>HEADER 영역</h2>
+        </div>
+
+        <div id= "nav">
+            <h2>Nav 영역</h2>
+        </div>
+
+        <div id = "section">
+            <h2>section 영역</h2>
+        </div>
+        <div id = "footer">
+            <h2>footer 영역</h2>
+        </div>
+    </body>
+
+</html>
