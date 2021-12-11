@@ -43,5 +43,25 @@
             <!-- readonly 속성과는 달리 전송 버튼(submit)을 눌러도 초깃값이 서버로 전송되지 않습니다.-->
         </form>
 
+        <h1>maxlength 속성을 이용한 필드의 최대길이 설정</h1>
+
+        <form action ="/examples/media/request.php">
+            이름:(이름은 10자까지만 가능)<br>
+            <input type ="text" name = "student_name" value ="홍길동" maxlength="10"><br>
+            학번 : <br>
+            <input type ="text" name="student_ID"><br>
+            <input type="Submit" value="전송">
+        </form>
+
+        <h1>size 속성을 이용한 필드의 최대길이 설정</h1>
+        
+        <form action="/examples/media/request.php">
+            이름:<br>
+            <input type="text" name="student_name" value="홍길동" size="30"><br>
+            학번 : <br>
+            <input type="text" name="student_ID"><br>
+            <input type="Submit" value="전송">
+        </form>
+
     </body>
 </html>
