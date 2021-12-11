@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> input 요소</title>
+        <meta charset="utf-8"> 
+    </head>
+    <body>
+        <h1>value의 속성을 이용한 초기값 설정</h1>
+        <form action ="/examples/media/request.php">
+            이름 : <br>
+            <input type="text" name ="studentname"><br>
+            학번 :<br>
+            <input type="text" name ="student_id"><br>
+            학과 : <br>
+            <input type = "Text" name ="department" value="컴퓨터공학과"><br>
+            <input type ="submit" value="전송">
+        </form>
+        
+        <br>
+
+        <form action="/examples/media/request.php">
+            이름 : <br>
+            <input type="text" name="studentname"><br>
+            학번 :<br>
+            <input type="text" name="student_id"><br>
+            학과 : <br>
+            <input type="Text" name="department" value="컴퓨터공학과" readonly><br>
+            <!--readonly = 입력된 값은 볼수있으나 수정 불가능-->
+            
+            <input type="submit" value="전송">
+        </form>
+
+
+        <form action ="/examples/media/request.php">
+            이름 : <br>
+            <input type = "text" name = "student_name"><br>
+            학번 : <br>
+            <input type = "text" name = "student_id"><br>
+            학과 : <br>
+            <input type="Text" name="department" value="컴퓨터공학과" disabled><br>
+            <!--disabled 속성은 사용자가 입력 필드를 아예 사용할 수 없도록 설정합니다.-->
+            <!-- readonly 속성과는 달리 전송 버튼(submit)을 눌러도 초깃값이 서버로 전송되지 않습니다.-->
+        </form>
+
+    </body>
+</html>

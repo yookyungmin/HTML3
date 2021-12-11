@@ -66,18 +66,18 @@
             <h1>문장양식</h1>
             <p>여러분의 부모님꼐 하고 싶은 말을 적어보세요</p>
             <form>
-                <textarea name="message" rows="5" cols="30">여기에 적으세요</textarea>
+                <textarea name = "message" rows ="50" cols="10"></textarea>
+                <!-- rows 세로 길이 cols 가로 길이-->
             </form>
-
             <h1>버튼 입력</h1>
-            <button type ="button" onclick ="alert(버튼을 클릭하셨군요!)">버튼을 눌러주세요</button>
+            <button type ="button" onclick ="alert('버튼을 클릭하셨군요!')">버튼을 눌러주세요</button>
 
             <h1>전송버튼 입력</h1>
             <form action="/examples/media/requst.php">
                 <!--action: 폼 데이터가 전송되는 백엔드 url-->
                 어릴떄 자신의 별명을 적어주세요 :<br>
                 <input type ="text" name = "nickname" value ="별명"><br> <br>
-                <input type = "submit" "value="전송"">
+                <input type = "submit" value="전송">
             </form>
 
             <p>별명을 적으신 후에 전송 버튼을 눌러보세요!</p>
@@ -88,9 +88,9 @@
             <h1>필드셋</h1>
             <form action="/examples/media/requst.php">
                 <fieldset>
-                    <legend> 입력양식</legend>
+                    <legend> 입력양식</legend> <!--필드셋 요소의 제목을 나타냄-->
                     이름 : <br>
-                    <input type="text" name="username"><br>
+                    <input type ="text" name ="username"> <br>
                     이메일 :<br>
                     <input type ="text" name="email"><br>
                     <input type = "submit" value ="전송">
